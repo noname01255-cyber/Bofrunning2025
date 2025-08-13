@@ -149,7 +149,7 @@
         const achievementList = [
             { id: 'consistency', icon: '👑', title: 'Consistency King', description: 'วิ่งอย่างน้อย 3 สัปดาห์ในเดือน July' },
             { id: 'finisher', icon: '🔥', title: 'Finisher\'s Fury', description: 'ทำผลงานใน August Week 1 ได้ระยะทางมากกว่า 30 กม.' },
-            { id: 'veteran', icon: '🎖️', title: 'June Veteran', description: 'ทำระยะทางสะสมในเดือน July ได้มากว่า 100 กม.' }
+            { id: 'veteran', icon: '🎖️', title: 'Month Veteran', description: 'ทำระยะทางสะสมในเดือน July ได้มากว่า 100 กม.' }
         ];
 
         function getTierInfo(total) {
@@ -171,7 +171,7 @@
                 achievements.finisher = true;
             }
 
-            // 3. June Veteran: Total distance in July > 100km
+            // 3. Month Veteran: Total distance in July > 100km
             const julyTotal = runner.july.reduce((sum, current) => sum + current, 0);
             if (julyTotal > 100) {
                 achievements.veteran = true;
@@ -320,4 +320,5 @@
     </script>
 
 </body>
+
 </html>
