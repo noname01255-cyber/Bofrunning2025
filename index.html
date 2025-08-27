@@ -98,7 +98,7 @@
             <h1 class="text-3xl md:text-5xl font-pixel text-yellow-300 text-shadow-pixel">
                 BOF RUNNING 2025
             </h1>
-            <p class="text-blue-300 text-lg font-semibold tracking-wider mt-2">WEEKLY UPDATE : 18 AUG 2025</p>
+            <p class="text-blue-300 text-lg font-semibold tracking-wider mt-2">WEEKLY UPDATE : 25 AUG 2025</p>
         </header>
 
         <section class="mb-12">
@@ -131,20 +131,21 @@
     </div>
 
     <script>
-        // Data for all runners - UPDATED 18 AUG 2025 with detailed weekly data
+        // Data for all runners - UPDATED 25 AUG 2025 with detailed weekly data
         const allRunners = [
-            { rank: 1, name: "Fah", total: 375.75, june: [50.86, 56.31], july: [36.18, 50.43, 30.42, 50.01, 10.35], august: [50.12, 41.07] },
-            { rank: 2, name: "Nut", total: 362.72, june: [42.47, 41.70], july: [40.50, 40.00, 39.05, 36.00, 38.00], august: [44.00, 41.00] },
-            { rank: 3, name: "Mink", total: 290.52, june: [60.60, 43.20], july: [47.20, 29.38, 36.44, 18.61, 20.45], august: [23.73, 10.91] },
-            { rank: 4, name: "CHDJN", total: 264.38, june: [10.35, 21.02], july: [29.39, 33.34, 38.20, 36.30, 35.57], august: [26.94, 33.27] },
-            { rank: 5, name: "P'Pom", total: 255.95, june: [41.36, 28.60], july: [22.92, 45.60, 32.56, 20.26, 28.00], august: [21.38, 15.27] },
-            { rank: 6, name: "Ter", total: 206.93, june: [27.26, 27.86], july: [26.47, 31.55, 33.86, 31.56, 0.00], august: [28.37, 0.00] },
-            { rank: 7, name: "Pond", total: 146.20, june: [38.97, 18.17], july: [28.35, 10.00, 19.08, 0.00, 8.68], august: [14.76, 8.19] },
-            { rank: 8, name: "Meen", total: 78.01, june: [27.26, 0.00], july: [15.81, 10.04, 0.00, 13.60, 5.04], august: [0.00, 6.26] },
-            { rank: 9, name: "Toua", total: 55.07, june: [8.16, 0.00], july: [0.00, 4.97, 5.33, 0.00, 5.18], august: [10.21, 21.22] },
-            { rank: 10, name: "May", total: 26.33, june: [0.00, 0.00], july: [0.00, 3.56, 3.46, 4.17, 2.31], august: [5.43, 7.40] },
-            { rank: 11, name: "P'Mali", total: 25.38, june: [25.38, 0.00], july: [0.00, 0.00, 0.00, 0.00, 0.00], august: [0.00, 0.00] },
-            { rank: 12, name: "Tle", total: 6.00, june: [0.00, 0.00], july: [0.00, 0.00, 6.00, 0.00, 0.00], august: [0.00, 0.00] }
+            { rank: 1, name: "Fah", total: 398.86, june: [50.86, 56.31], july: [36.18, 50.43, 30.42, 50.01, 10.35], august: [50.12, 41.07, 23.11] },
+            { rank: 2, name: "Nut", total: 398.27, june: [42.47, 41.70], july: [40.50, 40.00, 39.05, 36.00, 38.00], august: [44.00, 41.00, 35.55] },
+            { rank: 3, name: "Mink", total: 309.53, june: [60.60, 43.20], july: [47.20, 29.38, 36.44, 18.61, 20.45], august: [23.73, 10.91, 19.01] },
+            { rank: 4, name: "CHDJN", total: 298.05, june: [10.35, 21.02], july: [29.39, 33.34, 38.20, 36.30, 35.57], august: [26.94, 33.27, 33.67] },
+            { rank: 5, name: "P'Pom", total: 271.27, june: [41.36, 28.60], july: [22.92, 45.60, 32.56, 20.26, 28.00], august: [21.38, 15.27, 15.32] },
+            { rank: 6, name: "Ter", total: 230.49, june: [27.26, 27.86], july: [26.47, 31.55, 33.86, 31.56, 0.00], august: [28.37, 0.00, 23.56] },
+            { rank: 7, name: "Pond", total: 146.20, june: [38.97, 18.17], july: [28.35, 10.00, 19.08, 0.00, 8.68], august: [14.76, 8.19, 0.00] },
+            { rank: 8, name: "Meen", total: 88.29, june: [27.26, 0.00], july: [15.81, 10.04, 0.00, 13.60, 5.04], august: [0.00, 6.26, 10.28] },
+            { rank: 9, name: "Toua", total: 72.57, june: [8.16, 0.00], july: [0.00, 4.97, 5.33, 0.00, 5.18], august: [10.21, 21.22, 17.50] },
+            { rank: 10, name: "May", total: 30.31, june: [0.00, 0.00], july: [0.00, 3.56, 3.46, 4.17, 2.31], august: [5.43, 7.40, 3.98] },
+            { rank: 11, name: "P'Mali", total: 25.38, june: [25.38, 0.00], july: [0.00, 0.00, 0.00, 0.00, 0.00], august: [0.00, 0.00, 0.00] },
+            { rank: 12, name: "Tle", total: 6.00, june: [0.00, 0.00], july: [0.00, 0.00, 6.00, 0.00, 0.00], august: [0.00, 0.00, 0.00] },
+            { rank: 13, name: "Beer", total: 0.00, june: [0.00, 0.00], july: [0.00, 0.00, 0.00, 0.00, 0.00], august: [0.00, 0.00, 0.00] }
         ];
         
         // Tier definitions for levels
@@ -183,7 +184,7 @@
             }
 
             // 2. Finisher's Fury: Ran > 30km in the latest week of August
-            const latestAugustRun = runner.august[runner.august.length - 1];
+            const latestAugustRun = runner.august.length > 0 ? runner.august[runner.august.length - 1] : 0;
             if (latestAugustRun > 30) {
                 achievements.finisher = true;
             }
